@@ -3,42 +3,58 @@
     <head>
         <title>Contact Us</title>
         <style>
-            div {
-                position: relative;
+            body {
+                width: 500px;
+            }
+            .form-element {
                 padding-bottom: 15px;
                 width: 500px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            label {
+                padding-right: 20px;
             }
             input[type=text],
             select,
-            textarea {
-                position: absolute;
-                right: 0;
-                width: 250px;
+            textarea,
+            .r-col {
+                width: 50%;
+            }
+            .r-col input {
+                margin-right: 10px;
+            }
+            .r {
+                margin-left: 48%;
+                margin-bottom: 10px;
             }
         </style>
     </head>
     <body>
         <form action="#" method="POST">
-            <div>
+            <div class="form-element">
                 <label for="firstName">First Name:</label>
                 <input type="text" name="firstName" id="firstName">
             </div>
-            <div>
+            <div class="form-element">
                 <label for="lastName">Last Name: </label>
                 <input type="text" name="lastName" id="lastName">
             </div>
-            <div>
+            <div class="form-element">
                 <label for="email">Email:</label>
                 <input type="text" name="email" id="email">
             </div>
             
-            <div>
-                Type of License:
-                <input type="radio" id="business" name="license" value="business" checked>Business
-                <input type="radio" id="personal" name="license" value="personal">Personal
+            <div class="form-element">
+                <label for="license">Type of License:</label>
+                <div class="r-col" id="license">
+                    <input type="radio" id="business" name="license" value="business" checked>Business
+                    <input type="radio" id="personal" name="license" value="personal">Personal
+                </div>
+                
             </div>
             
-            <div>
+            <div class="form-element">
                 <!-- Reason -->
                 <label for="reason">Reason: </label>
                 <select name="reason" id="reason">
@@ -49,19 +65,18 @@
                 </select>
             </div>
             
-            <div>
+            <div class="form-element">
                 <!-- Additional Information -->
                 <label for="info">Additional Information:</label>
                 <textarea name="additionalInfo" id="info"></textarea>
             </div>
             
-            <div>
+            <div class="r">
                 <input type="checkbox" id="terms" name="terms">
                 <label for="terms">I have read the terms of service.</label>
-
             </div>
 
-            <div>
+            <div class="r">
                 <input type="submit" name="submit" value="Send Request">
             </div>
            
