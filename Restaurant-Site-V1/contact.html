@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Street Burgers</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <h1>Main Street Burgers</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="contact">
+            <form action="contact.html" method="POST" />
+                <div class="form-field">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" />      
+                </div>
+                <div class="form-field">
+                    <label for="phone">Phone:</label>
+                    <input type="text" name="phone" id="phone" />          
+                </div> 
+                <div class="form-field">
+                    <label for="inq">Reason for Inquiry:</label>
+                    <select name="inquiry" id="inq">
+                        <option value="catering">Catering</option>
+                        <option value="private-Party">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>           
+                </div>
+                <div class="form-field">
+                    <label for="info">Additional Information:</label>
+                    <textarea name="info" id="info" cols="30" rows="10"></textarea>                   
+                </div>
+                <div class="form-field">
+                    <label for="radio-label">Have you been to the restaurant?</label>
+                    <div class="form-input" id="radio-label">
+                        <input type="radio" name="anwer" value="No" checked />No
+                        <input type="radio" name="answer" value="Yes" />Yes
+                    </div>                      
+                </div>
+                <div class="form-field">
+                    <label for="checkbox-label">Best days to contact you:</label>
+                    <div class="form-input" id="checkbox-label">
+                        <input type="checkbox" name="days" value="M" />M
+                        <input type="checkbox" name="days" value="T" />T
+                        <input type="checkbox" name="days" value="W" />W
+                        <input type="checkbox" name="days" value="Th" />Th
+                        <input type="checkbox" name="days" value="F" />F
+                    </div>                           
+                </div>
+                <div class="form-field">
+                    <input type="submit" value="Send Request" />
+                </div>
+            </form>
+        </div>
+        <footer>
+            <address>123 Main Street, Louisville, Kentucky 41234</address>
+            <p>502-777-1234</p>
+        </footer>
+    </body>
+</html>
