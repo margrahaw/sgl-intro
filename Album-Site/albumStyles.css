@@ -1,8 +1,10 @@
-p {
-    width: 50%;
-    text-align: center;
+#content {
+    width: 60%;
+    border-top: 1px solid black;
     margin: auto;
-    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+}
+li {
     font-style: italic;
 }
 h1 {
@@ -13,7 +15,26 @@ h2 {
     margin: 20px auto;
     font-family: 'Spectral SC', serif;
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: #e0e0eb;
+}
 img {
     display: block;
     margin: 20px auto;
 }
+table {
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tbody td {
+    font-style: italic;
+    background-color: #e0e0eb;
+}
+
