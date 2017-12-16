@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+.main {
+    width: 400px;
+    margin: 20px auto 0 auto;
+}
+h1 {
+    text-align: center;
+}
+.nav {
+    padding: 20px 0px 20px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+a {
+    padding-left: 20px;
+}
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
