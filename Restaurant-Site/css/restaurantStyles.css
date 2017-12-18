@@ -20,8 +20,27 @@ h1 {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-a {
+
+a:link {
     padding-left: 20px;
+    color: burlywood;
+
+}
+a:visited {
+    color: black; 
+}
+/* font is bold when hovering */
+a:hover {
+    font-weight: bold;
+}
+/* active links are not underlined */
+a:active {
+    text-decoration: none;
+}
+/* visited links appear in a different color */
+
+caption {
+    font-family: 'Permanent Marker', cursive;
 }
 footer {
     text-align: center;
