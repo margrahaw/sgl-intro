@@ -1,0 +1,17 @@
+The element has the following proportions.
+
+#div {
+    height: 150px;
+    width: 400px;
+    margin: 20px;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+total height = 20px + 1px + 10px + 150px + 10px + 1px+ 20px = 212px
+
+total width = 20px + 1px + 10px + 400px + 10px + 1px + 20px = 462px
+
+browser calculated height = 1px 10px + 150px + 10px + 1px = 172px
+
+browser calculated width = 1px + 10px + 400px + 10px + 1px = 422px
