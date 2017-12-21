@@ -3,6 +3,7 @@
     <head>
         <title>Main Street Burgers</title>
         <link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker" rel="stylesheet">
+        <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/restaurantStyles.css" type="text/css">
     </head>
     <style>
@@ -35,11 +36,11 @@
     </style>
     <body>
         <h1>Main Street Burgers</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="menu.html">Menu</a></li>
+            <li role="presentation" class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
         <div class="contact">
             <form action="contact.html" method="POST" />
                 <div class="form-field">
@@ -93,5 +94,7 @@
             <address>123 Main Street, Louisville, Kentucky 41234</address>
             <p>502-777-1234</p>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </body>
 </html>

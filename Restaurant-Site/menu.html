@@ -3,6 +3,7 @@
     <head>
         <title>Main Street Burgers</title>
         <link href="https://fonts.googleapis.com/css?family=Bangers|Permanent+Marker" rel="stylesheet">
+        <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/restaurantStyles.css" type="text/css">
         <style>
             .menu {
@@ -13,14 +14,15 @@
                 margin: auto;
                 background-color: #efeff5;
             }
-            .table {
-                
+            .table-responsive {
+                padding-bottom: 20px;
                 background-color: #efeff5;
             }
-            table {
+            .table {
                 margin: auto;
-                padding-bottom: 20px;
-                width: 80%;                
+                
+                width: 80%; 
+                
             }
             td {
                 width: 100px;
@@ -36,13 +38,13 @@
     </head>
     <body>
         <h1>Main Street Burgers</h1>
-        <div class="nav">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-        <div class="menu">
-            <div class="menu-item">
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="index.html">Home</a></li>
+            <li role="presentation" class="active"><a href="menu.html">Menu</a></li>
+            <li role="presentation"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="menu row">
+            <div class="menu-item  col-xs-12 col-md-4">
                 <h3>Burger and Fries</h3>
                 <p>
                     An American Classic!<br>
@@ -53,7 +55,7 @@
                     $7.95
                 </p>
             </div>
-            <div class="menu-item">
+            <div class="menu-item col-xs-12 col-md-4">
                 <h3>Hot Dog and Chips</h3>
                 <p>
                     A Summer Classic!<br>
@@ -63,7 +65,7 @@
                     $7.95
                 </p>
             </div>
-            <div class="menu-item">
+            <div class="menu-item col-xs-12 col-md-4">
                 <h3>Italian Sausage and Peppers</h3>
                 <p>
                     An All-Time Favorite!<br>
@@ -74,8 +76,8 @@
                 </p>
             </div>
         </div>
-        <div class="menu">
-            <div class="menu-item">
+        <div class="menu row">
+            <div class="menu-item col-xs-12 col-md-4">
                 <h3>Tenderloin Sandwich and Chips</h3>
                 <p>
                     Really Hits the Spot!<br>
@@ -85,7 +87,7 @@
                     $8.95
                 </p>
             </div>
-            <div class="menu-item">
+            <div class="menu-item col-xs-12 col-md-4">
                 <h3>House Salad</h3>
                 <p>
                     On the Lighter Side<br>
@@ -96,7 +98,7 @@
                     $6.95
                 </p>
             </div>
-            <div class="menu-item">
+            <div class="menu-item col-xs-12 col-md-4">
                 <h3>Brisket Sandwich and Fries</h3>
                 <p>
                     A Taste of Texas!<br>
@@ -109,8 +111,8 @@
                 </p>
             </div>
         </div>
-        <div class="table">
-            <table>
+        <div class="table-responsive">
+            <table class="table table-bordered">
                 <caption>Beverages</caption>
                 <tbody>
                     <tr>
@@ -136,5 +138,7 @@
             <address>123 Main Street, Louisville, Kentucky 41234</address>
             <p>502-777-1234</p>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </body>
 </html>
