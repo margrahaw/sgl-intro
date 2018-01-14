@@ -18,6 +18,17 @@ h1 {
 .carousel {
     margin-bottom: 50px;
 }
+.carousel h2 {
+	font-family: 'Bangers', cursive;
+}
+.about img,
+#aboutText {
+	display: block;
+	margin: auto;
+}
+.about {
+	padding-bottom: 50px;
+}
 a {
     color: black;
 }
