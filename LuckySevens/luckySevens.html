@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/JavaScript" src="luckySevens.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <h1>Lucky Sevens</h1>
+    <form name="play" class="form-inline">
+            <div class="form-group">
+                <label for="bet">Starting Bet:</label>
+                <input type="number" class="form-control" id="bet">
+            </div>
+            <button type="button" id="submitButton" class="btn btn-default" onclick="playGame();">Play</button>
+    </form>
+	<hr>
+	<div id="results">
+	</div>
+</div>
+</body>
+</html>

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\displayEvens",
+    "\\Restaurant-Site"
   ],
-  "SelectedNode": "\\comparingElements.js",
+  "SelectedNode": "\\Restaurant-Site\\index.html",
   "PreviewInSolutionExplorer": false
 }
